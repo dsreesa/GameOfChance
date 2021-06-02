@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/b7b2d9f5fb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Rock Paper Scissors</h1>
+  </header>
+  <div class="container">
+    <div class="select-container">
+      <span class="user">Please choose one item!</span>
+  
+    </div>
+    <div class="buttons">
+      <button id ="rock" class="bn" onclick="game(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+      <button id ="paper"class="bn" onclick="game(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+      <button id ="scissors" class="bn" onclick="game(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+    </div>
+    <div id="challenge">
+      <div id="you">
+            <div id="YourObject"></div>
+            <div class="who">Your choice</div>
+      </div>
+      <div id="result"></div>
+      <div id="com">
+          <div id="ComObject"></div>
+          <div class="who">Computer</div>
+      <script src="main.js"></script>
+  </div>
+  <button onClick="window.location.reload();">Play again</button>
+
+</body>
+
+</html>
